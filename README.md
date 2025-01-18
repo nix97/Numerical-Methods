@@ -10,7 +10,7 @@ Use lib:<br>
 2. Chart as graph viewer.
 <br><br>
 
-## 2. Multi-Critical Point
+## 2. Multi-Critical Point Finder
 ### Using Extended Golden Search Method: ###
 <br>
 &nbsp&nbsp&nbsp To find multiple critical points (maximum and minimum) of the function simultaneously.
