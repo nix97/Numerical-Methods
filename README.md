@@ -8,3 +8,14 @@ Build in Lazarus 3.2. <br>
 Use lib:<br>
 1. Art formula as math parser to input math equation at runtime.<br>
 2. Chart as graph viewer.
+<br><br>
+
+## 2. Multi-Critical Point
+### Using Extended Golden Search Method: ###
+<br>
+&nbsp&nbsp&nbsp To find multiple critical points (maximum and minimum) of the function simultaneously.
+<br>
+Build in Lazarus 3.2. <br>
+Use lib:<br>
+1. Art formula as math parser to input math equation at runtime.<br>
+2. Chart as graph viewer.
