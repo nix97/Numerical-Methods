@@ -1,0 +1,41 @@
+Notes :
+
+Extended Golden Search Method :
+
+-Check algorithm on file : MultiCriticalPoints.docx
+
+
+ 
+-Sourcecode available in Lazarus
+
+-build in Lazarus 3.2
+
+-Using component : 
+   -Art formula as math expression parser(free version).
+   -Chart as graph viewer (built-in).
+
+-Download file : MultiCriticalPointsScLazarus.rar at https://bitbucket.org/nixz97/nix/downloads/ 
+
+-Feel free to use & modify.
+
+
+
+-Component included(Art formula on folder formula).  
+-How to install Art formula(as math parser) :
+  -At menu package.
+  -Open package file (load *.lpk) at folder formula\source\aformula.lpk
+  -Compile then install
+
+
+Tips:
+
+-To smaller the exe file size, can use strip *.exe (example: strip FalsePosition.exe) at console.
+-When rebuild project, the *.exe size approx 55 MB, after "strip" become approx 6 MB 
+
+
+by Lukas Setiawan Jan 15, 2025 (e-mail:lukassetiawan@yahoo.com)
+
+
+
+Happy coding coy....
+
