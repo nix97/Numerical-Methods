@@ -1,0 +1,426 @@
+object Form1: TForm1
+  Left = 138
+  Height = 488
+  Top = 60
+  Width = 847
+  Caption = 'Multi-Intersection Point Finder by Lukas Setiawan'
+  ClientHeight = 0
+  ClientWidth = 0
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 63
+    Caption = 'Y1 = F(x) = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 44
+    Height = 15
+    Top = 80
+    Width = 24
+    Caption = 'lb = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 45
+    Height = 15
+    Top = 112
+    Width = 23
+    Caption = 'rb ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 29
+    Height = 15
+    Top = 144
+    Width = 39
+    Caption = 'delta ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 20
+    Height = 15
+    Top = 176
+    Width = 53
+    Caption = 'epsilon = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 15
+    Top = 304
+    Width = 60
+    Caption = 'graph x1 ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ResultLabel: TLabel
+    Left = 20
+    Height = 15
+    Top = 400
+    Width = 41
+    Caption = 'Result :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 176
+    Height = 15
+    Top = 304
+    Width = 46
+    Caption = 'to   x2 ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Y1Edit: TEdit
+    Left = 80
+    Height = 23
+    Top = 16
+    Width = 304
+    TabOrder = 0
+  end
+  object lbEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 2
+  end
+  object rbEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 3
+  end
+  object deltaEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 144
+    Width = 80
+    TabOrder = 4
+  end
+  object gammaEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 6
+  end
+  object x1Edit: TEdit
+    Left = 80
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 9
+  end
+  object x2Edit: TEdit
+    Left = 230
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 10
+  end
+  object RunBut: TButton
+    Left = 81
+    Height = 29
+    Top = 352
+    Width = 75
+    Caption = 'Run'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+    OnClick = RunButClick
+  end
+  object ClearBut: TButton
+    Left = 192
+    Height = 29
+    Top = 352
+    Width = 75
+    Caption = 'Clear'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 14
+    OnClick = ClearButClick
+  end
+  object ResultMemo: TMemo
+    Left = 16
+    Height = 274
+    Top = 424
+    Width = 680
+    ScrollBars = ssVertical
+    TabOrder = 17
+  end
+  object Chart1: TChart
+    Left = 696
+    Height = 456
+    Top = 248
+    Width = 664
+    AxisList = <    
+      item
+        Arrow.BaseLength = 10
+        Arrow.Visible = True
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelFont.Style = [fsBold]
+        Title.Visible = True
+        Title.Caption = 'Y'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Arrow.BaseLength = 10
+        Arrow.Visible = True
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Style = [fsBold]
+        Title.Visible = True
+        Title.Caption = 'X'
+        Title.LabelBrush.Style = bsClear
+      end>
+    Legend.Visible = True
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Title.Font.Height = -16
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object GraphicY1: TLineSeries
+      Legend.Visible = False
+      Title = 'Graph Y1'
+      LinePen.Color = clBlue
+      LinePen.Width = 2
+      Marks.Arrow.Visible = True
+      Pointer.Brush.Color = clBlack
+      Pointer.Style = psNone
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+    object GraphicY2: TLineSeries
+      Legend.Visible = False
+      Title = 'Graph Y2'
+      LinePen.Color = clGreen
+      LinePen.Width = 2
+    end
+    object IntersectPoint: TLineSeries
+      Legend.Visible = False
+      Title = 'Intersect'
+      LinePen.Style = psClear
+      Pointer.Brush.Color = clRed
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+    object Iteration: TLineSeries
+      Legend.Visible = False
+      Title = 'Iteration'
+      LinePen.Color = clAqua
+      LinePen.Style = psClear
+      Marks.Shape = clsRoundRect
+      Marks.LabelBrush.Color = clBlue
+      Pointer.Brush.Color = clLime
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+  end
+  object HelpMemo: TMemo
+    Left = 888
+    Height = 186
+    Top = 48
+    Width = 376
+    Lines.Strings = (
+      'Multi-Intersection Point Finder'
+      ''
+      'To find multiple intersection points between two graph(function) simultaneously.'
+      ''
+      'This solver using Extended False Position method(just like Root-Finding).'
+      ''
+      'When two graph intersected Y1=Y2 then Y1-Y2=0 (it''s a finding root problem). If we got x as a root of the (Y1-Y2=0) then we input x into one of the equation Y1 or Y2'
+      'then we got Intersection point (x,y). '
+      'The iteration starting from a and b where c is mid point, till reach desire tolerances and got c as root.'
+      ' '
+      'For input :'
+      '- Y1=F(x) and Y2=G(x) as input function.'
+      '-The intersection points placed on the interval [lb,rb] or left boundary to right boundary.'
+      '- delta & epsilon is tolerances where: '
+      '      - delta is tolerance for the zero.'
+      '     - epsilon is tolerance for the value of F at zero.'
+      '- gamma is const width step size to count F(x), where x start from lb, till reach rb, e.g gamma=0.1. if got missed point then try decrease gamma into 0.01 etc. (the idea is check every four point F1(x1) and F2(x1), F1(x2) & F2(x2), where x2=x1+gamma.'
+      '-If two graph intersected must be fullfil this condition:'
+      '1.F1(x1) < F2(x1) and F1(x2) > F2(x2) or '
+      '2.F1(x1) > F2(x1) and F1(x2) < F2(x2).'
+      '-note input x1 & x2 is domain of graph [x1,x2], not on two condition above.'
+      '-If got condition above then input x1 and x2 as a & b for starting iteration.'
+      '-Repeat the process  till reach rb (as right boundary).'
+      '-M is smootness of the graph (increase M makes the graph smoother).'
+      ''
+      'Output :'
+      '-Intersection Points(Xintersection,Yintersection).'
+      '-Two Graph of the functions.'
+      '-Plot the Intersection Points.      '
+      '-Iteration & plot point of the iteration.'
+      ''
+      'For demo just click example and Run.'
+      ''
+      'Tips :'
+      '-We can drag graph with right click on mouse.'
+      '-We also can zoom in use left mouse then make rectangle from left - top.'
+      '-To zoom out use left mouse then make rectangle from right -bottom.  '
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 19
+  end
+  object Label10: TLabel
+    Left = 888
+    Height = 15
+    Top = 16
+    Width = 32
+    Caption = 'Help :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 16
+    Height = 15
+    Top = 208
+    Width = 52
+    Caption = 'gamma ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object epsilonEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 176
+    Width = 80
+    TabOrder = 5
+  end
+  object ExampleBut: TButton
+    Left = 304
+    Height = 29
+    Top = 352
+    Width = 75
+    Caption = 'example'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 15
+    OnClick = ExampleButClick
+  end
+  object AboutBut: TButton
+    Left = 1280
+    Height = 25
+    Top = 46
+    Width = 53
+    Caption = 'about'
+    TabOrder = 16
+    OnClick = AboutButClick
+  end
+  object MEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 8
+  end
+  object Label12: TLabel
+    Left = 44
+    Height = 15
+    Top = 272
+    Width = 22
+    Caption = 'M ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object IntersectNoEdit: TEdit
+    Left = 424
+    Height = 23
+    Top = 168
+    Width = 80
+    TabOrder = 12
+  end
+  object Label8: TLabel
+    Left = 288
+    Height = 15
+    Top = 168
+    Width = 133
+    Caption = 'No Intersection Point = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object IterCheck: TCheckBox
+    Left = 288
+    Height = 19
+    Top = 136
+    Width = 101
+    Caption = 'View Iteration '
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 11
+  end
+  object processTime: TLabel
+    Left = 448
+    Height = 15
+    Top = 328
+    Width = 79
+    Caption = 'Process Time :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 16
+    Height = 15
+    Top = 240
+    Width = 55
+    Caption = 'max iter='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MaxEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 240
+    Width = 80
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 48
+    Width = 63
+    Caption = 'Y2= G(x) = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Y2Edit: TEdit
+    Left = 80
+    Height = 23
+    Top = 48
+    Width = 304
+    TabOrder = 1
+  end
+  object ArtFormula1: TArtFormula
+    UnQuotedString = False
+    Step = False
+    StoreLines = False
+    ExternGetVar = False
+    VarNameLiterals = '_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    NoLeadingZero = False
+    ZeroEmptyString = False
+    AutoCreateVars = False
+    Left = 454
+    Top = 208
+  end
+end
