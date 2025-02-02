@@ -24,7 +24,7 @@ Use lib:<br>
 
 ## 3. Multi-Intersection Point Finder
 ### Using Extended False Position Method: ###
-<br><br>
+<br>
 &nbsp&nbsp&nbsp To find multiple intersection points between two graphs/functions simultaneously.
 <br>
 When two graphs intersected, Y1=Y2 so Y1-Y2=0, it's a finding root problem that can be solved using one of the finding root methods, in this case using False position method.<br>
