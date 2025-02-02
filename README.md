@@ -26,7 +26,7 @@ Use lib:<br>
 ### Using Extended False Position Method: ###
 <br>
 &nbsp&nbsp&nbsp To find multiple intersection points between two graphs/functions simultaneously.
-<br>
+<br><br>
 When two graphs intersected, Y1=Y2 so Y1-Y2=0, it's a finding root problem that can be solved using one of the finding root methods, in this case using False position method.<br>
 If we had been got the root(x), then input x into one of the equation (Y1 or Y2), so we got (x,y) as the intersection coordinate.<br>
 This app will be found multiple intersection points, so the method modified becomes Extended False Position method.<br>
