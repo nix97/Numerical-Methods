@@ -1,4 +1,4 @@
-# NumericalMethod
+# Numerical Method
 ## 1. Extended False Position
 ### False Position Formula: ###
   ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
