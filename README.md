@@ -29,7 +29,7 @@ Use lib:<br>
 <br><br>
 When two graphs intersected, Y1=Y2 so Y1-Y2=0, it's a finding root problem that can be solved using one of the finding root methods, in this case using False position method.<br>
 If we had been got the root(x), then input x into one of the equation (Y1 or Y2), so we got (x,y) as the intersection coordinate.<br>
-This app will be found multiple intersection points, so the method modified becomes Extended False Position method.<br>
+This app will be found multiple intersection points, so the method need to be extended becomes Extended False Position method.<br>
 Build in Lazarus 3.2. <br>
 Use lib:<br>
 1. Art formula as math parser to input math equation at runtime.<br>
