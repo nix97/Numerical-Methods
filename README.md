@@ -4,7 +4,7 @@
   ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
 <br><i>for i = 0,1,2,…..,n</i>
 <br><br>
-&emsp For finding multiple roots simultaneously of the function at the interval.<br><br>
+&emsp; For finding multiple roots simultaneously of the function at the interval.<br><br>
 This app use extended algorithm than classical False position method.<br>
 Build in Lazarus 3.2. <br>
 Use lib:<br>
@@ -45,7 +45,7 @@ Use lib:<br>
   ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ <br>
   <i>h=(b-a)/M ; x0 =a ; xM= b ; xk=a+k h ; for k=0,1,2…n</i>
 <br><br>
-   To simultaneously calculate the multi-area under the curve and between two curves of the function on the given interval.<br><br>
+&emsp; To simultaneously calculate the multi-area under the curve and between two curves of the function on the given interval.<br><br>
 Build in Lazarus 3.2. <br>
 Use lib:<br>
 1. Art formula as math parser to input math equation at runtime, the component/lib on the folder "formula".<br>
