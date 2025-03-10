@@ -35,7 +35,7 @@ Use lib:<br>
 1. Art formula as math parser to input math equation at runtime.<br>
 2. Chart as graph viewer.
 
-## 1. Multi-Area Calculation using Extended False Position Method and Extended Composite Simpson’S 1/3 Rule
+## 4. Multi-Area Calculation using Extended False Position Method and Extended Composite Simpson’S 1/3 Rule
 ### False Position Formula: ###
   ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
 <br>
