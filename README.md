@@ -4,7 +4,7 @@
   ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
 <br><i>for i = 0,1,2,…..,n</i>
 <br><br>
-&nbsp&nbsp&nbsp For finding multiple roots simultaneously of the function at the interval.<br><br>
+&emsp For finding multiple roots simultaneously of the function at the interval.<br><br>
 This app use extended algorithm than classical False position method.<br>
 Build in Lazarus 3.2. <br>
 Use lib:<br>
