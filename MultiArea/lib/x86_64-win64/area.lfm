@@ -1,0 +1,509 @@
+object Form1: TForm1
+  Left = -8
+  Height = 705
+  Top = -8
+  Width = 1360
+  Caption = 'Multi-Area by Lukas Setiawan'
+  ClientHeight = 705
+  ClientWidth = 1360
+  LCLVersion = '3.2.0.0'
+  object Label1: TLabel
+    Left = 16
+    Height = 15
+    Top = 16
+    Width = 63
+    Caption = 'Y1 = F(x) = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 44
+    Height = 15
+    Top = 80
+    Width = 24
+    Caption = 'lb = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label3: TLabel
+    Left = 45
+    Height = 15
+    Top = 112
+    Width = 23
+    Caption = 'rb ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label4: TLabel
+    Left = 29
+    Height = 15
+    Top = 144
+    Width = 39
+    Caption = 'delta ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label5: TLabel
+    Left = 20
+    Height = 15
+    Top = 176
+    Width = 53
+    Caption = 'epsilon = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label7: TLabel
+    Left = 8
+    Height = 15
+    Top = 336
+    Width = 60
+    Caption = 'graph x1 ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object ResultLabel: TLabel
+    Left = 16
+    Height = 15
+    Top = 432
+    Width = 41
+    Caption = 'Result :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label9: TLabel
+    Left = 176
+    Height = 15
+    Top = 336
+    Width = 46
+    Caption = 'to   x2 ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Y1Edit: TEdit
+    Left = 79
+    Height = 23
+    Top = 16
+    Width = 304
+    TabOrder = 0
+  end
+  object lbEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 80
+    Width = 80
+    TabOrder = 2
+  end
+  object rbEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 112
+    Width = 80
+    TabOrder = 3
+  end
+  object deltaEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 144
+    Width = 80
+    TabOrder = 4
+  end
+  object gammaEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 208
+    Width = 80
+    TabOrder = 6
+  end
+  object x1Edit: TEdit
+    Left = 79
+    Height = 23
+    Top = 336
+    Width = 80
+    TabOrder = 10
+  end
+  object x2Edit: TEdit
+    Left = 232
+    Height = 23
+    Top = 336
+    Width = 80
+    TabOrder = 11
+  end
+  object RunBut: TButton
+    Left = 80
+    Height = 29
+    Top = 383
+    Width = 75
+    Caption = 'Run'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 17
+    OnClick = RunButClick
+  end
+  object ClearBut: TButton
+    Left = 192
+    Height = 29
+    Top = 384
+    Width = 75
+    Caption = 'Clear'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 18
+    OnClick = ClearButClick
+  end
+  object ResultMemo: TMemo
+    Left = 16
+    Height = 242
+    Top = 456
+    Width = 672
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 22
+  end
+  object Chart1: TChart
+    Left = 688
+    Height = 456
+    Top = 249
+    Width = 672
+    AxisList = <    
+      item
+        Arrow.BaseLength = 10
+        Arrow.Visible = True
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Orientation = 900
+        Title.LabelFont.Style = [fsBold]
+        Title.Visible = True
+        Title.Caption = 'Y'
+        Title.LabelBrush.Style = bsClear
+      end    
+      item
+        Alignment = calBottom
+        Arrow.BaseLength = 10
+        Arrow.Visible = True
+        Marks.LabelBrush.Style = bsClear
+        Minors = <>
+        Title.LabelFont.Style = [fsBold]
+        Title.Visible = True
+        Title.Caption = 'X'
+        Title.LabelBrush.Style = bsClear
+      end>
+    Legend.Visible = True
+    Margins.Left = 10
+    Margins.Top = 10
+    Margins.Right = 10
+    Margins.Bottom = 10
+    Title.Font.Height = -16
+    Title.Font.Style = [fsBold]
+    Title.Text.Strings = (
+      'TAChart'
+    )
+    object GraphicY1: TLineSeries
+      Legend.Visible = False
+      Title = 'Y1'
+      LinePen.Color = clBlue
+      LinePen.Width = 2
+      Marks.Arrow.Visible = True
+      Pointer.Brush.Color = clBlack
+      Pointer.Style = psNone
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+    object GraphicY2: TLineSeries
+      Legend.Visible = False
+      Title = 'Y2'
+      LinePen.Color = clGreen
+      LinePen.Width = 2
+    end
+    object Point: TLineSeries
+      Legend.Visible = False
+      Title = 'Limits'
+      LinePen.Style = psClear
+      Pointer.Brush.Color = clRed
+      Pointer.Style = psCircle
+      Pointer.Visible = True
+      ShowPoints = True
+    end
+    object Area1: TAreaSeries
+      Legend.Visible = False
+      Title = 'Area'
+      AreaBrush.Color = clSkyBlue
+      AreaLinesPen.Style = psClear
+    end
+    object BoundLine: TLineSeries
+      Legend.Visible = False
+      LinePen.Style = psDash
+      LinePen.Width = 2
+    end
+    object BoundLine2: TLineSeries
+      Legend.Visible = False
+      LinePen.Style = psDash
+      LinePen.Width = 2
+    end
+  end
+  object HelpMemo: TMemo
+    Left = 888
+    Height = 186
+    Top = 48
+    Width = 376
+    Lines.Strings = (
+      'Multi-Area'
+      ''
+      '   To simultaneously calculate the multi-area under the curve and between two curves of the function on the given interval.'
+      ''
+      'This solver using Extended False Position method and Composite Simpson''s 1/3 rule.'
+      ''
+      'Find boundary of integration first using False position(just like finding root). Then finding all area using Composite Simpson''s 1/3 rule.'
+      ''
+      '   We started from lb(left boundary), we set default gamma=0.0097(as scanner), this unic number to avoid gamma equal root(or we missed the root), what we need is boundary where the root placed, then find the root with False Position method. We begin check Y1=F(x) and Y2=F(x+gamma) with different gamma at every step, and so on till got opposite sign Y1 & Y2.'
+      'If missed the root or slow down the app we can change gamma as needed.'
+      ''
+      'For input :'
+      '-Y1=F(x) if Single curve.  Y1 and Y2 if Double curves.'
+      '-The whole area placed on the interval [lb,rb] or left boundary to right boundary.'
+      '-delta & epsilon is tolerances where: '
+      '     - delta is tolerance for the zero.'
+      '     - epsilon is tolerance for the value of F at zero.'
+      '-gamma is const width step size to count two position (Y1 &Y2) .'
+      '-max iter is maximum of iteration to find the root. '
+      '-Input x1 & x2 is domain of graph [x1,x2].'
+      '-If got condition above then input x1 and x2 as a & b for starting iteration.'
+      '-M is number of subinterval of each area.'
+      '-S is smootness of the graph (increase S makes the graph smoother).'
+      '-Select Single/Double curve.'
+      '-View Iteration of bound point and/or Area to calculated. '
+      ''
+      'Output :'
+      '-All Area with boundary from lower limit to upper limit.'
+      '-Graphs of the functions.'
+      '-Iteration for bounds(limits) & step calculation of the area.'
+      ''
+      'For demo just click e.g. Single or e.g. Double then Run.'
+      ''
+      'Tips :'
+      '-We can drag graph with right click on mouse.'
+      '-We also can zoom in use left mouse then make rectangle from left - top.'
+      '-To zoom out use left mouse then make rectangle from right -bottom.  '
+    )
+    ReadOnly = True
+    ScrollBars = ssVertical
+    TabOrder = 24
+  end
+  object Label10: TLabel
+    Left = 888
+    Height = 15
+    Top = 16
+    Width = 32
+    Caption = 'Help :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label11: TLabel
+    Left = 16
+    Height = 15
+    Top = 208
+    Width = 52
+    Caption = 'gamma ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object epsilonEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 175
+    Width = 80
+    TabOrder = 5
+  end
+  object AboutBut: TButton
+    Left = 1280
+    Height = 25
+    Top = 48
+    Width = 53
+    Caption = 'about'
+    TabOrder = 21
+    OnClick = AboutButClick
+  end
+  object SEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 304
+    Width = 80
+    TabOrder = 9
+  end
+  object Label12: TLabel
+    Left = 44
+    Height = 15
+    Top = 304
+    Width = 18
+    Caption = 'S ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object NoPointEdit: TEdit
+    Left = 346
+    Height = 23
+    Top = 211
+    Width = 80
+    TabOrder = 14
+  end
+  object Label8: TLabel
+    Left = 282
+    Height = 15
+    Top = 211
+    Width = 62
+    Caption = 'No Point = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object IterPointCheck: TCheckBox
+    Left = 280
+    Height = 19
+    Top = 179
+    Width = 169
+    Caption = 'View Iteration of Boundary'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 13
+  end
+  object processTime: TLabel
+    Left = 416
+    Height = 15
+    Top = 336
+    Width = 79
+    Caption = 'Process Time :'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Label13: TLabel
+    Left = 16
+    Height = 15
+    Top = 240
+    Width = 55
+    Caption = 'max iter='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MaxEdit: TEdit
+    Left = 80
+    Height = 23
+    Top = 240
+    Width = 80
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    Left = 16
+    Height = 15
+    Top = 48
+    Width = 63
+    Caption = 'Y2= G(x) = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object Y2Edit: TEdit
+    Left = 80
+    Height = 23
+    Top = 48
+    Width = 304
+    TabOrder = 1
+  end
+  object Label14: TLabel
+    Left = 48
+    Height = 15
+    Top = 272
+    Width = 22
+    Caption = 'M ='
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object MEdit: TEdit
+    Left = 79
+    Height = 23
+    Top = 272
+    Width = 80
+    TabOrder = 8
+  end
+  object rgCurve: TRadioGroup
+    Left = 272
+    Height = 80
+    Top = 87
+    Width = 146
+    AutoFill = True
+    Caption = 'Select'
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ClientHeight = 60
+    ClientWidth = 142
+    Font.Style = [fsBold]
+    ItemIndex = 0
+    Items.Strings = (
+      'Single Curve'
+      'Double Curve'
+    )
+    ParentFont = False
+    TabOrder = 12
+  end
+  object SingleExamBut: TButton
+    Left = 304
+    Height = 29
+    Top = 384
+    Width = 75
+    Caption = 'e.g. Single'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 19
+    OnClick = SingleExamButClick
+  end
+  object NoAreaEdit: TEdit
+    Left = 348
+    Height = 23
+    Top = 280
+    Width = 80
+    TabOrder = 16
+  end
+  object Label15: TLabel
+    Left = 284
+    Height = 15
+    Top = 280
+    Width = 59
+    Caption = 'No Area = '
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object AreaCheck: TCheckBox
+    Left = 282
+    Height = 19
+    Top = 248
+    Width = 153
+    Caption = 'View Calculation of Area'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 15
+  end
+  object DoubleExamBut: TButton
+    Left = 416
+    Height = 28
+    Top = 384
+    Width = 75
+    Caption = 'e.g. Double'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 20
+    OnClick = DoubleExamButClick
+  end
+  object ArtFormula1: TArtFormula
+    UnQuotedString = False
+    Step = False
+    StoreLines = False
+    ExternGetVar = False
+    VarNameLiterals = '_ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
+    NoLeadingZero = False
+    ZeroEmptyString = False
+    AutoCreateVars = False
+    Left = 548
+    Top = 128
+  end
+end

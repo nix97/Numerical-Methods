@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="MultiArea.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos Y="12"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="area.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="Form1"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="Area"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="415"/>
+        <CursorPos X="92" Y="437"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="103"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\Delphi\Zip Files\formula\source\formula.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="2388"/>
+        <CursorPos Y="2401"/>
+        <UsageCount Value="10"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit>
+      <Unit>
+        <Filename Value="H:\lazarus\fpc\3.2.2\source\rtl\objpas\sysutils\sysstr.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1747"/>
+        <CursorPos X="10" Y="1754"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="area.lfm"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="200"/>
+        <CursorPos X="43" Y="216"/>
+        <UsageCount Value="25"/>
+        <Loaded Value="True"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="641" Column="56" TopLine="631"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="477" Column="32" TopLine="462"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="208" Column="31" TopLine="188"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="477" Column="29" TopLine="457"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="868" Column="10" TopLine="857"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="1025" Column="62" TopLine="1020"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="94" Column="3" TopLine="81"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="579" Column="28" TopLine="570"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="585" Column="21" TopLine="573"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="104" Column="26" TopLine="97"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="585" Column="49" TopLine="573"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="576" Column="27" TopLine="564"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="569" Column="4" TopLine="561"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="95" Column="89" TopLine="82"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="575" Column="23" TopLine="551"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="95" Column="91" TopLine="88"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="587" Column="28" TopLine="575"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="597" Column="25" TopLine="585"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="569" Column="25" TopLine="563"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="376" Column="44" TopLine="371"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="589" Column="39" TopLine="578"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="90" Column="94" TopLine="83"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="1035" Column="19" TopLine="970"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="426" Column="124" TopLine="421"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="432" Column="75" TopLine="420"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="433" Column="67" TopLine="421"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+        <Caret Line="747" Column="96" TopLine="731"/>
+      </Position>
+      <Position>
+        <Filename Value="area.pas"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
