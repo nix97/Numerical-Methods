@@ -35,6 +35,7 @@ Build in Lazarus 3.2. <br>
 Use lib:<br>
 1. Art formula as math parser to input math equation at runtime.<br>
 2. Chart as graph viewer.
+<br><br>
 
 ## 4. Multi-Area Calculation using Extended False Position Method and Extended Composite Simpson’s 1/3 Rule
 ### False Position Formula: ###
