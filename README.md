@@ -37,10 +37,12 @@ Use lib:<br>
 
 ## 4. Multi-Area Calculation using Extended False Position Method and Extended Composite Simpson’s 1/3 Rule
 ### False Position Formula: ###
-  ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
+  ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ##<br>
+  <i>for i = 0,1,2,…..,n</i>
 <br><br>
 ### Composite Simpson’s 1/3 Rule Formula: ###
-  ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ ## 
+  ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ ##<br>
+  <i>h=(b-a)/M ; x0 =a ; xM= b ; xk=a+k h ; for k=0,1,2…n</i>
 <br><br>
 &nbsp&nbsp&nbsp To simultaneously calculate the multi-area under the curve and between two curves of the function on the given interval.<br><br>
 Build in Lazarus 3.2. <br>
