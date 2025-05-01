@@ -44,7 +44,7 @@ Use lib:<br>
 <br><br>
 ### Composite Simpson’s 1/3 Rule Formula: ###
   ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ <br>
-  <i>h=(b-a)/M ; x0 =a ; xM= b ; xk=a+k h ; for k=0,1,2…n</i>
+  <i>h=(b-a)/M ; x0 =a ; xM= b ; xk=a+k h ; for k=0,1,2…M</i>
 <br><br>
 &emsp; To simultaneously calculate the multi-area under the curve and between two curves of the function on the given interval.<br><br>
 Build in Lazarus 3.2. <br>
