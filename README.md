@@ -56,7 +56,8 @@ Use lib:<br>
 ## 5. Integral Double & Integral Equation Solver
 ### Using Simpson's 1/3 rule: ###
 <br>
-&nbsp&nbsp&nbsp To find double integral of function Z=f(x,y) and Integral Equation. <br>
+&nbsp&nbsp&nbsp To find double integral of function I=f(x,y) and Integral Equation. <br>
+  ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ <br>
 Build in Delphi 7 <br>
 <br><br>
 
