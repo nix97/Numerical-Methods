@@ -53,3 +53,10 @@ Use lib:<br>
 2. Chart as graph viewer.
 <br><br>
 
+## 5. Integral Double & Integral Equation Solver
+### Using Simpson's 1/3 rule: ###
+<br>
+&nbsp&nbsp&nbsp To find double integral of function Z=f(x,y) and Integral Equation. <br>
+Build in Delphi 7 <br>
+<br><br>
+
