@@ -1,4 +1,14 @@
-# Numerical Method
+# Numerical Methods
+
+![License](https://img.shields.io/github/license/nix97/Numerical-Methods)
+![Issues](https://img.shields.io/github/issues/nix97/Numerical-Methods)
+![Stars](https://img.shields.io/github/stars/nix97/Numerical-Methods)
+![Delphi](https://img.shields.io/badge/Language-Delphi-EA1F63?logo=delphi&logoColor=white)
+![Root Finding](https://img.shields.io/badge/Method-Root%20Finding-blue)
+![Interpolation](https://img.shields.io/badge/Method-Interpolation-green)
+![Numerical Integration](https://img.shields.io/badge/Method-Numerical%20Integration-orange)
+![Systems of Eq.](https://img.shields.io/badge/Method-Linear%20Systems-purple)
+
 ## 1. Extended False Position
 ### False Position Formula: ###
   ## $c_i=b_i-\frac { f(b_i)(b_i-a_i)} { f(b_i)-f(a_i) }\$ ## 
