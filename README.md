@@ -57,8 +57,8 @@ Use lib:<br>
 ### Using Simpson's 1/3 rule: ###
 <br>
 &nbsp&nbsp&nbsp To find double integral of function I=f(x,y) and Integral Equation. <br>
-  
-  ## $\I=int_{y1{y2}int_{x1}^{x2}f(x,y)dxdy\$ <br>
+
+  ## $\I=int_{y1}^{y2}int_{x1}^{x2}f(x,y)dx dy\$ <br>
 Build in Delphi 7 <br>
 <br><br>
 
