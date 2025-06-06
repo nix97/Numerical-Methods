@@ -57,7 +57,9 @@ Use lib:<br>
 ### Using Simpson's 1/3 rule: ###
 <br>
 &nbsp&nbsp&nbsp To find double integral of function I=f(x,y) and Integral Equation. <br>
-  ## $\int_{a}^{b}f(x)dx\approx\frac{h}{3} \left[ f(x_0)+2\sum_{k=1}^{\frac{M}{2}-1}f(x_{2k})+4\sum_{k=1}^{\frac{M}{2}}f(x_{2k-1})+f(x_M)\right]\$ <br>
+  
+  ## $\I=int_{y1{y2}int_{x1}^{x2}f(x,y)dx dy\$ 
+<br>
 Build in Delphi 7 <br>
 <br><br>
 
