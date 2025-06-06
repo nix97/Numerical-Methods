@@ -58,7 +58,7 @@ Use lib:<br>
 <br>
 &nbsp&nbsp&nbsp To find double integral of function I=f(x,y) and Integral Equation. <br>
 
-  ## $I=\int_{y1}^{y2}\int_{x1}^{x2}f(x,y)dxdy\$ <br>
+  ## $ I=\int_{y1}^{y2}\int_{x1}^{x2}f(x,y)dxdy\$ <br>
 Build in Delphi 7 <br>
 <br><br>
 
