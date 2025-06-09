@@ -1,11 +1,12 @@
 ![License](https://img.shields.io/github/license/nix97/Numerical-Methods)
 ![Issues](https://img.shields.io/github/issues/nix97/Numerical-Methods)
 ![Stars](https://img.shields.io/github/stars/nix97/Numerical-Methods)
-![Delphi](https://img.shields.io/badge/Language-Delphi-EA1F63?logo=delphi&logoColor=white)
+![Delphi](https://img.shields.io/badge/Build with-Delphi-EA1F63?logo=delphi&logoColor=white)
 ![Root Finding](https://img.shields.io/badge/Method-Root%20Finding-blue)
 ![Interpolation](https://img.shields.io/badge/Method-Interpolation-green)
 ![Numerical Integration](https://img.shields.io/badge/Method-Numerical%20Integration-orange)
 ![Systems of Eq.](https://img.shields.io/badge/Method-Linear%20Systems-purple)
+![Lazarus](https://img.shields.io/badge/Built%20with-Lazarus-blue?logo=pascal)
 
 # Numerical Methods
 
