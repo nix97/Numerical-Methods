@@ -93,4 +93,9 @@ MENU :<br>
 11. PDEs<br>
 Each menu got submenu.<br><br>
 
+## 6. File Nix Numeric.rar
+### This is an app windows for solving math problem using numerical methods.
+<br>
+The menu just like app android above.
+
 
