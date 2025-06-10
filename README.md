@@ -70,6 +70,27 @@ Use lib:<br>
 &nbsp&nbsp&nbsp To find double integral of function I=f(x,y) and Integral Equation. <br>
 
 ## $I=\int_{y1}^{y2}\int_{x1}^{x2}f(x,y) dxdy\$ <br>
-Build in Delphi 7 <br>
-<br><br>
+Build in Delphi 7<br><br>
+
+## 6. File Nix NumericVer3.2.apk
+### This is an app android for solving math problem using numerical methods.
+<br>
+MENU :<br>
+1. GRAPHIC<br>
+2. ROOT-FINDING <br>
+ &nbsp;&nbsp;&nbsp;  2.1. BISECTION<br>
+ &nbsp;&nbsp;&nbsp; 2.2. FALSE POSITION<br>
+ &nbsp;&nbsp;&nbsp; 2.3. SECANT<br>
+ &nbsp;&nbsp;&nbsp; 2.4. NEWTON-RAPHSON etc<br>
+3. OPTIMIZATION<br>
+4. NUMERICAL INTEGRATION<br>
+5. NUMERICAL DIFFERENTIATION<br>
+6. LINEAR SYSTEM<br>
+7. EIGENPAIRS<br>
+8. INTERPOLATION<br>
+9. CURVE-FITTING<br>
+10. ODEs<br>
+11. PDEs<br>
+Each menu got submenu.<br><br>
+
 
