@@ -92,12 +92,12 @@ MENU :<br>
 10. ODEs<br>
 11. PDEs<br>
 Each menu got submenu.<br>
-Download binary file at menu releases below<br><br>
+Download binary file at menu releases below.<br><br>
 
 ## 6. File Nix Numeric.rar
 ### This is an app windows for solving math problem using numerical methods.
 <br>
 The menu just like app android above.<br>
-Download binary file at menu releases below<br><br>
+Download binary file at menu releases below.<br><br>
 
 
