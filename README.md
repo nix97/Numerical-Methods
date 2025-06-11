@@ -7,6 +7,7 @@
 ![Numerical Integration](https://img.shields.io/badge/Method-Numerical%20Integration-orange)
 ![Systems of Eq.](https://img.shields.io/badge/Method-Linear%20Systems-purple)
 ![Lazarus](https://img.shields.io/badge/Built%20with-Lazarus-blue?logo=pascal)
+![GitHub release downloads](https://img.shields.io/github/downloads/nix97/Numerical-Methods/latest/total)
 
 # Numerical Methods
 
