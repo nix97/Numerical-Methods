@@ -99,6 +99,7 @@ Download binary file at menu releases below.<br><br>
 ### This is an app windows for solving math problem using numerical methods.
 <br>
 The menu just like app android above.<br>
-Download binary file at menu releases below.<br><br>
+Download on:<br>
+https://github.com/nix97/Numerical-Methods/releases/download/numerical2/Nix.Numeric.rar.<br><br>
 
 
