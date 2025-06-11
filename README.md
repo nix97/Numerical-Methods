@@ -93,7 +93,8 @@ MENU :<br>
 10. ODEs<br>
 11. PDEs<br>
 Each menu got submenu.<br>
-Download binary file at menu releases below.<br><br>
+Download on: <br>
+https://github.com/nix97/Numerical-Methods/releases/download/numerical/Nix.NumericVer3.2.apk.<br><br>
 
 ## 6. File Nix Numeric.rar
 ### This is an app windows for solving math problem using numerical methods.
