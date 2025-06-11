@@ -96,7 +96,7 @@ Each menu got submenu.<br>
 Download on: <br>
 https://github.com/nix97/Numerical-Methods/releases/download/numerical/Nix.NumericVer3.2.apk.<br><br>
 
-## 6. File Nix Numeric.rar
+## 7. File Nix Numeric.rar
 ### This is an app windows for solving math problem using numerical methods.
 <br>
 The menu just like app android above.<br>
