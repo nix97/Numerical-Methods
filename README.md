@@ -1,4 +1,5 @@
 ![License](https://img.shields.io/github/license/nix97/Numerical-Methods)
+![Nix Numeric](https://img.shields.io/badge/App Android-orange)
 ![Issues](https://img.shields.io/github/issues/nix97/Numerical-Methods)
 ![Stars](https://img.shields.io/github/stars/nix97/Numerical-Methods)
 ![Delphi](https://img.shields.io/badge/Built%20with-Delphi-red?logo=pascal)
